@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jessica Hasty</title>
+    <link href="index-style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Cinzel&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+</head>
+<style>
+    form {
+        background-image: url(images/vintage-texture.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: 55%;
+        margin: 2% auto;
+        padding: 7%;
+        border-radius: 5%;
+    }
+    h1 {
+        font-family: 'Beau Rivage', cursive;
+        font-size: 4em;
+        margin: 0;
+    }
+    input[type=text] {
+        width: 100%;
+        padding: 1%;
+        box-sizing: border-box;
+        height: 4rem;
+        border: 3px solid #25261C;
+        background-color: rgba(113, 115, 102, 0.5);
+        color: #25261C;
+        font-size: 1.4em;
+    }
+    textarea {
+        width: 100%;
+        padding: 1%;
+        box-sizing: border-box;
+        margin-top: 0.5%;
+        margin-bottom: 2%;
+        resize:none;
+        height: 20rem;
+        border: 3px solid #25261C;
+        background-color: rgba(113, 115, 102, 0.5);
+        color: #25261C;
+        font-size: 1.4em;
+    }
+    label {
+        font-size: 2em;
+    }
+    ::placeholder {
+        color: #25261C;
+    }
+    .button {
+        width:10%;
+        color: #25261C;
+        background-color: #717366;
+        border: 3px solid #25261C;
+        border-radius: 10%;
+        padding: 1%;
+        font-size: 1.3em;
+    }
+    .button:hover {
+        cursor: pointer;
+        background-color:#25261C;
+        color:#D9D0C1;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        background-color: #25261C;
+        width: 100%;
+        margin-top: 2%;
+    }
+    footer ul {
+        width: 100%;
+        text-align: left;
+    }
+    footer li {
+        display: inline-block;
+        font-size: 1em;
+        padding: 1%;
+    }
+</style>
+
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="projects.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<section class="contact-form">
+    <form>
+        <h1>Contact Me!</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name...">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Your email...">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+        <input type="submit" name="submit" value="Submit" class="button">
+    </form>
+
+    <footer>
+        <div style="width:100%;">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="projects.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+            <p style="text-align:right; margin: 0; padding:1%;">&copy; Jessica Hasty</p>
+
+    </footer>

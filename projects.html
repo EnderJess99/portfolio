@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jessica Hasty</title>
+    <link href="index-style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Cinzel&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+</head>
+<script src="script.js" type="text/javascript"></script>
+<style>
+    main {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .project {
+        width: 40%;
+        padding: 2%;
+        margin: 2%;
+    }
+    a {
+        color: #25261C;
+        font-size: 1.3em;
+    }
+    h4 {
+        font-size: 2em;
+        color:#25261C;
+        font-family: 'Beau Rivage', cursive;
+    }
+    h5 {
+        font-size: 1.5em;
+        color:#25261C;
+        text-decoration: underline;
+    }
+    p {
+        font-size: 1.3em;
+    }
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    
+.lbl-toggle {
+  display: block;
+  font-family: 'Beau Rivage', cursive;
+  font-size: 2em;
+  text-align: center;
+  padding: 1rem;
+  color: #717366;
+  background: #25261C;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.40s ease-out;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .3s ease-out;
+}
+.collapsible-content .content-inner {
+  background:  rgba(37, 38, 28, 0.5);
+  border-bottom: 1px solid  rgba(113, 115, 102, 0.5);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+}
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .40s ease-in-out;
+}
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+</style>
+
+<header>
+        
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="projects.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+    <div class="project">
+        <h3>Salty Sisters Spa Website</h3>
+        <a href="https://saltysistersspa.com/" target="_blank">Salty Sisters Spa</a>
+            <h4>Description:</h4>
+                <p>Salty Sisters Spa is a small business located in Vicksburg, MS. I did this project for my family, who owns the business. It included using a hosting site and
+                    development using WordPress. The website is integrated with the square platform for ecommerce purposes. It is a two page website that allows the booking of appointments
+                    for several different services within the salt spa. 
+                </p>
+            <div class="wrap-collapsible">
+                <input id="collapsible1" class="toggle" type="checkbox">
+                <label for="collapsible1" class="lbl-toggle">Skills Used</label>
+                    <div class="collapsible-content">
+                        <div class="content-innner">
+                            <br><br>
+                            <p>WordPress Development, Web Design</p>
+                        </div>
+                    </div>
+            </div>
+    </div>
+
+    <div class="project">
+        <h3>Full Stack Web Project</h3>
+        <a href="https://github.com/EnderJess99/fullStackProject" target="_blank">Full Stack Project GitHub</a>
+            <h4>Description:</h4>
+                <p>This was a full-stack project that served as my Capstone Project in my Software Engineering Technology degree. It was a project that was continuously worked on 
+                    throughout the year of my degree program. The front-end includes a seven page website for a Tour Home in Vicksburg, MS, written from scratch. It also include a 
+                    database component for the back-end using PhpMyAdmin.<br><br>
+                    *Note this project is not published.
+                </p>
+        <div class="wrap-collapsible">
+            <input id="collapsible2" class="toggle" type="checkbox">
+            <label for="collapsible2" class="lbl-toggle">Skills Used</label>
+            <div class="collapsible-content">
+                <div class="content-inner">
+                    <h5>Front End Skills</h5>
+                        <p>Logo made in Figma</p>
+                        <p>Navigation with dropdown feature</p>
+                        <p>Slideshow with arrow navigation made using JavaScript</p>
+                        <p>Flexbox</p>
+                        <p>Rounded, filtered, and background images</p>
+                        <p>Submission form used for a fake membership program</p>
+                        <p>Table used to showcase the working form</p>
+                    <h5>Back End Skills</h5>
+                        <p>PHP database connection page</p>
+                        <p>MySQL used to build original database, but later imported to PhpMyAdmin</p>
+                        <p>SQL queries connection front end form to back end database</p>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+</main>
+
+<footer>
+    <div style="width:100%;">
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="projects.html">Experience</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+        <p style="text-align:right; margin: 0; padding:1%;">&copy; Jessica Hasty</p>
+
+</footer>
