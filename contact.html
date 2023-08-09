@@ -11,7 +11,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Cinzel&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
 </head>
-    <body>
+
+<style>
+    h1 {
+        font-size: 5em;
+        font-family: 'Beau Rivage', cursive;
+    }
+    form {
+        background-image: url(images/background-texture.jpg);
+        background-repeat: no-repeat;
+        width: 60%;
+        padding: 5%;
+        margin: 5% auto;
+        border-radius: 5%;
+    }
+    label {
+        font-size: 2em;
+        font-family: 'Beau Rivage', cursive;
+    }
+    ::placeholder {
+        color: #25261C;
+        font-size: 1.5em;
+        font-family: 'Beau Rivage', cursive;
+    }
+    input[type=text] {
+        background-color: rgba(113, 115, 102, 0.5);
+        color: #25261C;
+        border: 3px solid #25261C;
+    }
+    @media screen 
+    and (min-device-width: 300px)
+    and (max-device-width: 1200px) {
+        form {
+            width: 95%;
+        }
+    }
+</style>
+
+    <body style="background-color: #717366; color:#D9D0C1";>
         <header>
             <nav>
                 <ul class="nav justify-content-end" style="background-color: #25261C; padding:1%;">
@@ -27,39 +64,24 @@
         <h1>Contact Me!</h1>
         <div class="mb-3 mt-3">
           <label for="name" class="form-label">Name:</label>
-          <input type="text" class="form-control" id="name" name="name" placeholder="Your name..." required>
-          
+          <input type="text" class="form-control" id="name" name="name" placeholder="Your name..." required style="background-color: rgba(113, 115, 102, 0.5);color: #25261C;border: 3px solid #25261C;">
         </div>
 
         <div class="mb-3">
             <label for="email" class="form-label">Email:</label>
-            <input type="text" class="form-control" id="email" name="email" placeholder="Your email..." required>
+            <input type="text" class="form-control" id="email" name="email" placeholder="Your email..." required style="background-color: rgba(113, 115, 102, 0.5);color: #25261C;border: 3px solid #25261C;">
             <div class="valid-feedback">Valid</div>
             <div class="invalid-feedback">Please fill out this field.</div>
         </div>
         
         <div class="mb-3">
             <label for="message">Message:</label>
-            <textarea class="form-control" rows="5" id="message" name="text" placeholder="Type your message here..."></textarea>
+            <textarea class="form-control" rows="5" id="message" name="text" placeholder="Type your message here..." style="background-color:rgba(113, 115, 102, 0.5);border: 3px solid #25261C;"></textarea>
         </div>
         <button type="submit" class="btn">Submit</button>
     </form>
 <!--
-<style>
-    form {
-        background-image: url(images/vintage-texture.jpg);
-        background-repeat: no-repeat;
-        background-size:cover;
-        width: 55%;
-        margin: 2% auto;
-        padding: 7%;
-        border-radius: 5%;
-    }
-    h1 {
-        font-family: 'Beau Rivage', cursive;
-        font-size: 4em;
-        margin: 0;
-    }
+
     input[type=text] {
         width: 100%;
         padding: 1%;
