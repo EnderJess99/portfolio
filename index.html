@@ -4,119 +4,204 @@
 <head>
     <meta charset="UTF-8">
     <title>Jessica Hasty</title>
-    <link href="index-style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Cinzel&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
 </head>
+<style>
 
+     /* Hero Image Styles */
+    .intro {
+    background: url(images/destin-pic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    }
+    /*Button Styles*/
+    .buttons a {
+    color: #25261C;
+    background-color: #717366;
+    border: 3px solid #25261C;
+    border-radius: 30%;
+    padding: 2%;
+    font-size: 1.4em;
+    margin-right: 2%;
+    text-decoration: none;
+    }
+    .buttons a:hover {
+    cursor: pointer;
+    background-color:#25261C;
+    color:#D9D0C1;
+    }
+    /* List styles - responsive */
+    .skill-list {
+        margin-left: 20%;
+        margin-bottom: 20%;
+    }
+    @media screen
+    and (min-device-width: 1400px)
+    and (max-device-width: 2500px) {
+        .skill-list {
+            margin-left: 30%;
+        }
+    }
+
+    @media screen
+    and (min-device-width: 400px)
+    and (max-device-width: 700px) {
+        h3 {
+            margin-top: 8%;
+        }
+        .skill-list {
+            margin-left: 35%;
+            padding-bottom: 15%;
+        }
+        .ed-list {
+            padding-left: 5%;
+            padding-bottom: 50%;
+        }
+    }
+
+    @media screen 
+    and (min-device-width: 701px)
+    and (max-device-width: 1000px) {
+        h3 {
+            margin-top: 10%;
+        }
+        .skill-list {
+            margin-left: 35%;
+            padding-bottom: 25%;
+            font-size: 1.5em;
+        }
+        .ed-list {
+            padding-left: 5%;
+            padding-bottom: 50%;
+            font-size: 1.5em;
+        }
+
+    }
+    @media screen 
+    and (min-device-width: 1001px)
+    and (max-device-width: 1200px) {
+        h3 {
+            margin-top: 10%;
+        }
+        .skill-list {
+            margin-left: 40%;
+            padding-bottom: 25%;
+            font-size: 2em;
+        }
+        .ed-list {
+            padding-left: 10%;
+            padding-bottom: 50%;
+            font-size: 2em;
+        }
+    }
+
+</style>
+<body style="background-color: #717366;">
 
     <header>
-        
         <nav>
-            <ul>
-                <li><a href="#anchor1">About</a></li>
-                <li><a href="projects.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul class="nav justify-content-end" style="background-color: #25261C; padding:1%;">
+                <li class="nav-item" ><a class="nav-link" style="color:#D9D0C1; font-size: 1.3em;" href="index.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" style="color:#D9D0C1; font-size: 1.3em;" href="projects.html">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" style="color:#D9D0C1; font-size: 1.3em;" href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
-        <main>
-
-        <section class="intro">
-            <div class="intro-text">
-                <h1>Hello. I am Jessica Hasty.<br><br> I am a Web Designer and Developer.</h1>
-            </div>
-        </section>
+        
+             <!-- HERO -->
+             <section class="intro">
+                <div class="intro-text">
+                    <h1 style="background-color: rgba(37, 38, 28, 0.5); font-family: 'Beau Rivage', cursive;text-align: left;color: black;padding: 20% 5%;color: #D9D0C1;">
+                        Hello. I am Jessica Hasty.<br><br> I am a Web Designer and Developer.</h1>
+                </div>
+            </section>          
     </header>
-        <section id="anchor1" class="about">
-            <div class="about-text">
-                <h3>About Me</h3>
-                <img id="quill" src="images/quill.png">
-                <p>I am a 24 year old from Vicksburg, Mississippi. I'm also recent graduate with an associates degree in software engineering technology. 
-                This was a career change for me following graduation with a Bachelors of Science in history. 
-                </p>
-                <p>It is my passion to provide informative and beautiful web designs.</p>
-                
-                <div class="buttons">
-                    <br>
-                    <a href="projects.html">See Projects</a>
-                    <a href="Resume - 2023.docx" download>Download Resume</a>
-
+    <main>
+        <section class="container-fluid px-4">
+           
+            <div class="row" style="margin-top: 3%;">
+                <div class="col-xl-5 " style="margin:auto; background-image: url(images/background-texture.jpg); padding: 5%; border-radius: 10%;">
+                    <h2 style="font-size: 3em; font-family: 'Beau Rivage', cursive; color:#D9D0C1">About Me</h2>
+                    <p style="font-size: 1.5em; color:#D9D0C1;">I am a 24 year old from Vicksburg, Mississippi. I'm also recent graduate with an associates degree in software engineering technology.
+                        This was a career change for me following graduation with a Bachelors of Science in history.</p>
+                        <p style="font-size: 1.5em; color:#D9D0C1">It is my passion to provide informative and beautiful web designs.</p>
+                        <div class="buttons">
+                            <br>
+                            <a href="projects.html">Projects</a>
+                            <a href="Resume - 2023.docx" download>Resume</a>
+       
+                        </div>
+                </div>
+                <div class="col-xl-5 d-none d-xl-block">
+                    <img class="rounded-circle" style="width: 65%;" src="images/selfie-copy.jpg">
                 </div>
             </div>
-            <img id="selfie" src="images/selfie-copy.jpg">
         </section>
+
 <!-- <div class="closed">
     <img id="closed-scroll1" src="images/closed-scroll.png">
     <img id="closed-scroll2" src="images/closed-scroll.png">
 </div> -->
-    <section class="skills">
-            
-            
-            <div class="skill-div">
-                <h3>Technical Skills</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>SQL</li>
-                    <li>PHP/PhpMyAdmin</li>
-                    <li>Python</li>
-                    <li>Bootstrap</li>
-                    <li>Visual Studio</li>
-                    <li>Figma</li>
-                    <li>WordPress</li>
-                </ul>
-                <div class="ed">
-                <h3 id="ed-responsive">Education</h3>
-                    <dl>
-                        <dt>Hinds Community College</dt>
-                        <dd>Associate of Applied Science in Software Engineering Technology</dd>
-                        <dd>Associate of Arts in General Studies</dd>
-                        <dt>Mississippi College</dt>
-                        <dd>Bachelors of Science in History</dd>
-                    </dl>
-                </div>
-            </div>
-            
-            <div class="cert-div">
-                <h3>Certifications</h3>
-                <ul>
-                    <li>Learn HTML</li>
-                    <li>Learn CSS</li>
-                    <li>Learn Intermediate CSS</li>
-                    <li>Learn Git and GitHub</li>
-                    <li>Learn the Command Line</li>
-                    <li>Learn CSS: Responsive Design</li>
-                    <li>Learn Python 3</li>
-                    <li>Learn SQL</li>
-                    <li>Learn JavaScript</li>
-                    <li>Introduction to UI and UX Design</li>
-                    <li>Learn Bootstrap</li>
-                </ul>
-                </div>
-            </div>
-        </section>
 
 
-    
-
-    </main>
-
-
-    <footer>
-        <div style="width:100%;">
-            <ul>
-                <li><a href="#anchor1">About</a></li>
-                <li><a href="projects.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<section class="container-fluid">
+    <div class="row" style="margin-top: 5%;">
+        <div class="col-xl-4" style="text-align: left; background-image: url(images/open-scroll.png); background-size: 100%; background-repeat:no-repeat; padding-top: 4%; padding-bottom:10%;">
+            <h3 style=" text-align:center; font-family:'Beau Rivage', cursive; font-size: 3em;">Technical Skills</h3>
+            <ul class="skill-list">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>PHP/PhpMyAdmin</li>
+                <li>UI/UX</li>
+                <li>Bootstrap</li>
+                <li>Figma</li>
+                <li>WordPress</li>
             </ul>
         </div>
-            <p style="text-align:right; margin: 0; padding:1%;">&copy; Jessica Hasty</p>
-
+        <div class="col-xl-4" style="text-align: left; background-image: url(images/open-scroll.png); background-size: 100%; background-repeat:no-repeat; padding-top: 4%; padding-bottom:10%;">
+            <h3 style="font-family: 'Beau Rivage', cursive; font-size: 3em; text-align: center;">Education</h3>
+                <dl style="width:55%; margin: auto;" class="ed-list">
+                    <dt>Hinds Community College</dt>
+                    <dd>Associate of Applied Science in Software Engineering Technology</dd>
+                    <dd>Associate of Arts in General Studies</dd>
+                    <dt>Mississippi College</dt>
+                    <dd>Bachelors of Science in History</dd>
+                </dl>
+        </div>
+        <div class="col-xl-4" style="text-align: left; background-image: url(images/open-scroll.png); background-size: 100%; background-repeat:no-repeat; padding-top: 4%; padding-bottom:10%;">
+            <h3 style="font-family: 'Beau Rivage', cursive; font-size: 3em; text-align: center;">Certifications</h3>
+            <ul class="skill-list">
+                <li>Learn HTML</li>
+                <li>Learn CSS</li>
+                <li>Learn Git and GitHub</li>
+                <li>Learn the Command Line</li>
+                <li>Learn Python 3</li>
+                <li>Learn SQL</li>
+                <li>Learn JavaScript</li>
+                <li>Learn Bootstrap</li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    
+    </main>
+    <footer>
+        <ul class="nav justify-content-start" style="background-color: #25261C; padding:1%;">
+            <li class="nav-item" ><a class="nav-link" style="color:#D9D0C1; font-size: 1.3em;" href="index.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" style="color:#D9D0C1; font-size: 1.3em;" href="projects.html">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" style="color:#D9D0C1; font-size: 1.3em;" href="contact.html">Contact</a></li>
+        </ul>
+        <p style="background-color: #25261C;font-size:1.3em;color: #D9D0C1;text-align: end; margin:0; padding:0;">&copy;Jessica Hasty | enderjess99@gmail.com</p>
     </footer>
-
+</body>
     
 </html>
