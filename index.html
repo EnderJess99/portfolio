@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Cinzel&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
 </head>
 <style>
+
      /* Hero Image Styles */
     .intro {
     background: url(images/destin-pic.jpg);
@@ -21,9 +22,26 @@
     background-size:cover;
     position: relative;
     }
+    /*Button Styles*/
+    .buttons a {
+    color: #25261C;
+    background-color: #717366;
+    border: 3px solid #25261C;
+    border-radius: 30%;
+    padding: 2%;
+    font-size: 1.4em;
+    margin-right: 2%;
+    text-decoration: none;
+    }
+    .buttons a:hover {
+    cursor: pointer;
+    background-color:#25261C;
+    color:#D9D0C1;
+    }
+
 
 </style>
-<body>
+<body style="background-color: #717366;">
 
     <header>
         <nav>
@@ -34,7 +52,7 @@
             </ul>
         </nav>
 
-        <main>
+        
              <!-- HERO -->
              <section class="intro">
                 <div class="intro-text">
@@ -43,29 +61,35 @@
                 </div>
             </section>          
     </header>
-
-        <section id="anchor1" class="about">
-            <div class="about-text">
-                <h3>About Me</h3>
-                <img id="quill" src="images/quill.png">
-                <p>I am a 24 year old from Vicksburg, Mississippi. I'm also recent graduate with an associates degree in software engineering technology. 
-                This was a career change for me following graduation with a Bachelors of Science in history. 
-                </p>
-                <p>It is my passion to provide informative and beautiful web designs.</p>
-                
-                <div class="buttons">
-                    <br>
-                    <a href="projects.html">See Projects</a>
-                    <a href="Resume - 2023.docx" download>Download Resume</a>
-
+    <main>
+        <section class="container-fluid px-4">
+           
+            <div class="row" style="margin-top: 3%;">
+                <div class="col-xl-5 " style="margin:auto; background-image: url(images/background-texture.jpg); padding: 5%; border-radius: 10%;">
+                    <h2 style="font-size: 3em; font-family: 'Beau Rivage', cursive; color:#D9D0C1">About Me</h2>
+                    <p style="font-size: 1.5em; color:#D9D0C1;">I am a 24 year old from Vicksburg, Mississippi. I'm also recent graduate with an associates degree in software engineering technology.
+                        This was a career change for me following graduation with a Bachelors of Science in history.</p>
+                        <p style="font-size: 1.5em; color:#D9D0C1">It is my passion to provide informative and beautiful web designs.</p>
+                        <div class="buttons">
+                            <br>
+                            <a href="projects.html">Projects</a>
+                            <a href="Resume - 2023.docx" download>Resume</a>
+       
+                        </div>
+                </div>
+                <div class="col-xl-5 d-none d-xl-block">
+                    <img class="rounded-circle" style="width: 65%;" src="images/selfie-copy.jpg">
                 </div>
             </div>
-            <img id="selfie" src="images/selfie-copy.jpg">
         </section>
+
+
+
 <!-- <div class="closed">
     <img id="closed-scroll1" src="images/closed-scroll.png">
     <img id="closed-scroll2" src="images/closed-scroll.png">
 </div> -->
+
     <section class="skills">
             
             
