@@ -22,6 +22,28 @@
             </nav>
         </header>
     </body>
+
+    <form>
+        <h1>Contact Me!</h1>
+        <div class="mb-3 mt-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Your name..." required>
+          
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="text" class="form-control" id="email" name="email" placeholder="Your email..." required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="message">Message:</label>
+            <textarea class="form-control" rows="5" id="message" name="text" placeholder="Type your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
 <!--
 <style>
     form {
@@ -98,42 +120,4 @@
         padding: 1%;
     }
 </style>
-
-    <header>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="projects.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-<section class="contact-form">
-    <form>
-        <h1>Contact Me!</h1>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your name...">
-
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" placeholder="Your email...">
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
-        <input type="submit" name="submit" value="Submit" class="button">
-    </form>
-
-    <footer>
-        <div style="width:100%;">
-            <ul>
-                <li><a href="index.html">About</a></li>
-                <li><a href="projects.html">Experience</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-            <p style="text-align:right; margin: 0; padding:1%;">&copy; Jessica Hasty</p>
-
-    </footer>
--->
+   
