@@ -11,6 +11,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Cinzel&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
 </head>
+<style>
+    .card {
+        background-image: url(images/background-texture.jpg);
+        color:#25261C;
+    }
+    h3 {
+        font-size: 2em;
+        font-family: 'Beau Rivage', cursive;
+        font-weight: bold;
+    }
+    .title-btn {
+        display: flex;
+        justify-content: space-between;
+    }
+    .title-btn a {
+        background-color: #25261C;
+        color:#D9D0C1;
+        text-decoration: none;
+        font-size: 1.3em;
+        font-family: cursive;
+        border: 3px solid #D9D0C1;
+        border-radius: 10px;
+        padding: 1%;
+        box-shadow: 5px 5px #25261C;
+    }
+    .title-btn a:hover {
+        background-color: #717366;
+        color:#25261C;
+        border: 3px solid #25261C;
+    }
+    h5 {
+        font-family: cursive;
+        font-weight: bold;
+    }
+    p {
+        font-family: cursive;
+        font-size: 1.2em;
+    }
+</style>
 
 <body style="background-color: #717366;">
 
@@ -26,14 +65,17 @@
 
     <main>
         <div class="mt-4 p-5">
-            <h1>Projects and Experience</h1>
+            <h1 style="font-size: 5em; font-family: 'Beau Rivage', cursive;padding-left: 1%;">Projects and Experience</h1>
         </div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="card" style="width: 45%;">
-                    <img src="images/LogoFixedSniped.jpg" class="card-image-top">
+            <div class="row" style="justify-content: space-evenly;">
+                <div class="card" style="width: 45%; margin-bottom: 2%;">
+                    <img src="images/LogoFixedSniped.jpg" class="card-image-top" style="margin-top:2%; border-radius: 10px;">
                     <div class="card-body">
-                        <h3 class="card-title">Salty Sisters Spa Website - <a href="https://saltysistersspa.com/" target="_blank">Salty Sisters Spa</a></h3>
+                        <div class="title-btn">
+                            <h3 class="card-title">Salty Sisters Spa Website</h3>
+                            <a href="https://saltysistersspa.com/" target="_blank">Salty Sisters Spa</a>
+                        </div>
                         <h5 class="card-text">Description</h5>
                         <p class="card-text">Salty Sisters Spa is a small business located in Vicksburg, MS. I did this project for my family, who owns the business. It included using a hosting site and
                             development using WordPress. The website is integrated with the square platform for ecommerce purposes. It is a two page website that allows the booking of appointments
@@ -42,10 +84,13 @@
                 
                 </div>
 
-                <div class="card" style="width: 45%;">
-                    <img src="images/Screenshot (14).png" class="card-image-top" style="height: 53%">
+                <div class="card" style="width: 45%;margin-bottom: 2%;">
+                    <img src="images/Screenshot (14).png" class="card-image-top" style="height: 48%; margin-top:2%; border-radius: 10px;" >
                     <div class="card-body">
-                        <h3 class="card-title">Full Stack Web Project - <a href="https://github.com/EnderJess99/fullStackProject" target="_blank">Full Stack Project GitHub</a></h3>
+                        <div class="title-btn">
+                            <h3 class="card-title">Full Stack Web Project</h3>
+                            <a href="https://github.com/EnderJess99/fullStackProject" target="_blank">Full Stack Project GitHub</a>
+                        </div>
                         <h5 class="card-text">Description</h5>
                         <p class="card-text">This was a full-stack project that served as my Capstone Project in my Software Engineering Technology degree. It was a project that was continuously worked on 
                             throughout the year of my degree program. The front-end includes a seven page website for a Tour Home in Vicksburg, MS, written from scratch. It also include a 
