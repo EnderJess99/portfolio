@@ -13,6 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Cinzel&family=Merriweather:ital@0;1&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
 </head>
 <style>
+    h1 {
+        font-size: 5em; 
+        font-family: 'Beau Rivage', cursive;
+        padding-left: 1%;
+    }
     .card {
         background-image: url(images/background-texture.jpg);
         color:#25261C;
@@ -26,7 +31,7 @@
         display: flex;
         justify-content: space-between;
     }
-    .title-btn a {
+    .title-btn button {
         background-color: #25261C;
         color:#D9D0C1;
         text-decoration: none;
@@ -37,7 +42,7 @@
         padding: 1%;
         box-shadow: 5px 5px #25261C;
     }
-    .title-btn a:hover {
+    .title-btn button:hover {
         background-color: #717366;
         color:#25261C;
         border: 3px solid #25261C;
@@ -56,6 +61,26 @@
         padding-top: 3%;
         font-size: 1.5em;
     }
+    @media screen 
+    and (min-device-width: 300px)
+    and (max-device-width: 680px) {
+        h1 {
+            font-size: 3em;
+        }
+        .card {
+            width: 95%;
+        }
+        .title-btn button {
+            font-size: 1em;
+        }
+    }
+    @media screen 
+    and (min-device-width: 300px)
+    and (max-device-width: 1100px) {
+        .skills-used {
+            display: block;
+        }
+    }
 </style>
 
 <body style="background-color: #717366;">
@@ -72,16 +97,16 @@
 
     <main>
         <div class="mt-4 p-5">
-            <h1 style="font-size: 5em; font-family: 'Beau Rivage', cursive;padding-left: 1%;">Projects and Experience</h1>
+            <h1>Projects and Experience</h1>
         </div>
         <div class="container-fluid">
             <div class="row" style="justify-content: space-evenly;">
-                <div class="card" style="width: 45%; margin-bottom: 2%;">
+                <div class="card col-lg-5" style="margin-bottom: 2%;">
                     <img src="images/LogoFixedSniped.jpg" class="card-image-top" style="margin-top:2%; border-radius: 10px;">
                     <div class="card-body">
                         <div class="title-btn">
                             <h3 class="card-title">Salty Sisters Spa Website</h3>
-                            <a href="https://saltysistersspa.com/" target="_blank">Salty Sisters Spa</a>
+                            <button href="https://saltysistersspa.com/" target="_blank">Salty Sisters Spa</button>
                         </div>
                         <h5 class="card-text">Description</h5>
                         <p class="card-text">Salty Sisters Spa is a small business located in Vicksburg, MS. I did this project for my family, who owns the business. It included using a hosting site and
@@ -97,12 +122,12 @@
                 
                 </div>
 
-                <div class="card" style="width: 45%;margin-bottom: 2%;">
+                <div class="card col-lg-5" style="margin-bottom: 2%;">
                     <img src="images/Screenshot (14)-smaller.png" class="card-image-top" style="margin-top:2%; border-radius: 10px;" >
                     <div class="card-body">
                         <div class="title-btn">
                             <h3 class="card-title">Full Stack Web Project</h3>
-                            <a href="https://github.com/EnderJess99/fullStackProject" target="_blank">Full Stack Project GitHub</a>
+                            <button href="https://github.com/EnderJess99/fullStackProject" target="_blank">Full Stack Project GitHub</button>
                         </div>
                         <h5 class="card-text">Description</h5>
                         <p class="card-text">This was a full-stack project that served as my Capstone Project in my Software Engineering Technology degree. It was a project that was continuously worked on 
